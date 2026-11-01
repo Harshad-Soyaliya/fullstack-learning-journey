@@ -1,0 +1,136 @@
+<!-- Convert a page made only of div s into semantic HTML. -->
+
+
+<!-- 
+
+
+this is non sementic code
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Learning Blog</title>
+</head>
+<body>
+
+
+    <div>
+        <div>CodeLearner</div>
+        
+        <div>
+            <div><a href="#home">Home</a></div>
+            <div><a href="#blog">Blog</a></div>
+            <div><a href="#about">About</a></div>
+        </div>
+    </div>
+
+    <div>
+        
+        <div>
+            
+            <div>
+                <div>Learning Semantic HTML</div>
+                <div>Posted on November 1, 2026</div>
+                <div>
+                    <div>Semantic HTML makes web pages easier to read for both humans and machines...</div>
+                    <div>It improves SEO and helps accessibility tools like screen readers.</div>
+                </div>
+            </div>
+
+            <div>
+                <div>Why CSS Grid is Awesome</div>
+                <div>Posted on October 25, 2026</div>
+                <div>
+                    <div>Grid layouts allow you to build complex responsive designs easily...</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <div>About Me</div>
+            <div>I am a student practicing frontend web development!</div>
+            
+            <div>Useful Links</div>
+            <div>
+                <div><a href="https://mozilla.org">MDN Web Docs</a></div>
+                <div><a href="https://w3schools.com">W3Schools</a></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <div>&copy; 2026 CodeLearner. All rights reserved.</div>
+    </div>
+
+</body>
+</html>
+ -->
+
+
+<!-- here this entire code i convert into sementic -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="content" description="this page content technology blog">
+    <title>My Learning Blog</title>
+</head>
+<body>
+
+    <header>
+
+    <nav>
+        <h1>CodeLearner</h1>
+        
+        <ul style="line-height: 175%;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <main>
+        
+        <section>
+            
+            <article>
+                <h2>Learning Semantic HTML</h2>
+                <p><time datetime="2026-11-01">Posted on November 1, 2026</time></p>
+                <p>Semantic HTML makes web pages easier to read for both humans and machines...</p>
+                <p>It improves SEO and helps accessibility tools like screen readers.</p>
+            </article>
+
+            <article>
+                <h2>Why CSS Grid is Awesome</h2>
+                <p><time datetime="2026-10-25">Posted on October 25, 2026</time></p>
+                <p>Grid layouts allow you to build complex responsive designs easily...</p>
+            </article>
+
+        </section>
+
+        <aside>
+            <h3>About Me</h3>
+            <p>I am a student practicing frontend web development!</p>
+            
+            <h3>Useful Links</h3>
+            <ul style="line-height: 175%;">
+                <li><a href="#">MDN Web Docs</a></li>
+                <li><a href="#">W3Schools</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CodeLearner. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
