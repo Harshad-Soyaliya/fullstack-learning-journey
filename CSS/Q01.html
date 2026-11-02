@@ -1,0 +1,182 @@
+<!-- Style your profile card from Part 4: set colours, fonts, padding, border, radius and a
+shadow. Use DevTools to see the box model diagram (Elements tab, Computed). -->
+
+
+
+<!doctype html>
+<html>
+    <head>
+        <title>Profile | Harshad</title>
+        <script src="https://kit.fontawesome.com/77a037d333.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+                font-family: 'Plus Jakarta Sans', sans-serif; /* Applied modern tech typography */
+            }
+
+            h2 , p {
+                color: #a0844d;
+            }
+
+            article{
+                padding: 50px;
+                border-radius: 25px;
+                width: max-content;
+                height: max-content;
+                margin: auto;
+                position: relative;
+                background-color: #FDFBF7;
+                box-shadow: 16px 20px 12px #a0844d; /* x y blur spread */
+            }
+
+            img{
+                text-align: center;
+                margin: auto;
+                margin-bottom: 10px;
+                border-radius: 50%;
+                
+            }
+            .fa-arrow-left{
+                position: absolute;
+                left: 15px;
+                color: #c99e49;
+                background-color: #ecd29e75;
+                border-radius: 25px;
+                padding: 12px;
+                
+                
+            }
+            .fa-ellipsis-vertical{
+                position: absolute;
+                right: 15px;
+                background-color: #ecd29e75;
+                color: #c99e49;
+                border-radius: 25px;
+                padding: 12px;
+
+            }
+
+            #info{
+                text-align: center;
+            }
+
+            
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+    
+                
+            }
+
+            li{
+                list-style: none;
+               
+            }
+
+            button{
+                width: 49%;
+                height: 40px;
+                border-radius: 20px;
+                border: 0px;
+                background-color: #f4deb2;
+                color: #c99e49;
+            }
+
+            #social , #lsc{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #social li{
+                padding: 12px;
+                border-radius: 50%;
+                font-size: 25px;
+                background-color: #faf1df;
+                color: #eaa51d;
+
+            }
+
+            #lsc li{
+                padding: 20px;
+                font-size: 15px;
+                color: #d8ab4f;
+
+            }
+
+            .lsc{
+                padding: 8px 18px;   
+
+            }
+
+            .lsc:hover{
+                background-color: #ecd29e75;
+                color: #c99e49;
+                border-radius: 25px;
+            }
+
+            header{
+                text-align: center;
+                margin: 12px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Profile Card</h1>
+        </header>
+
+        <main>
+
+            <article>
+                
+                <section>
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i><br>
+                    <div id="info">
+                        <img src="Harshad.jpeg" alt="Harshad" height="180" width="180">
+                        <h2>Harshad Soyaliya</h2>
+                        <p>Full Stack Web Developer</p>
+                    </div>
+                </section>
+
+                <section id="social">
+                    <ul>
+                        <li><i class="fa-brands fa-github"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-leetcode"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <button>Message</button>
+                    <button>Subscribe</button>
+                </section>
+
+                <section id="lsc">
+                    <ul>
+                        <li><i class="fa-regular fa-heart lsc"></i></li>
+                        <li><i class="fa-regular fa-comment lsc"></i></li>
+                        <li><i class="fa-regular fa-share-from-square lsc"></i></li>
+                    </ul>
+                </section>
+
+            </article>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+       
+    </body>
+</html>
