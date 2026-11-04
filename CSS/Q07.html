@@ -1,0 +1,67 @@
+<!-- Build the product-card grid above with 6 cards. Resize the window and watch the columns change. Then rebuild it with Flexbox and compare. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #F , #G{
+            border: 1px solid black;
+            height: 40vh;
+        }
+
+        .F-ProductC , .G-ProductC {
+            border: 1px solid red;
+            width: 125px;
+            height: 125px;
+            text-align: center;
+        }
+
+        /*using flexbox*/
+
+        #F{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        /*using grid*/
+
+        #G {
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px;
+            gap: 100px;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="F">
+        <div class="F-ProductC">product card</div>
+        <div class="F-ProductC">Product card</div>
+        <div class="F-ProductC">Product card</div>
+        <div class="F-ProductC">Product card</div>
+        <div class="F-ProductC">Product card</div>
+        <div class="F-ProductC">Product card</div>
+    </div>
+
+
+    <hr><hr>
+
+    <h1>Grid</h1>
+    <div id="G">
+        <div class="G-ProductC">Product card</div>
+        <div class="G-ProductC">Product card</div>
+        <div class="G-ProductC">Product card</div>
+        <div class="G-ProductC">Product card</div>
+        <div class="G-ProductC">Product card</div>
+        <div class="G-ProductC">Product card</div>
+    </div>
+</body>
+</html>

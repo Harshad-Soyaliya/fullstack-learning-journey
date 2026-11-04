@@ -1,0 +1,51 @@
+<!-- Build a navbar with Flexbox: logo left, links right, and on screens narrower than 640px stack the links under the logo. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar | Harshad</title>
+
+    <style>
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            justify-content: end;
+        }
+
+        @media (max-width: 640px) {
+
+            header , ul{
+                flex-direction: column;
+            }
+
+        }
+        
+
+       
+      
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Harhad</a>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Service</li>
+                <li>Register</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

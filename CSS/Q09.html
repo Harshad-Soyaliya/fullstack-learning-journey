@@ -1,0 +1,45 @@
+<!-- Add light and dark themes using CSS variables and prefers-color-scheme -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            margin: 5px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        :root{
+            --bg-color: rgb(238, 208, 117);
+
+        }
+
+    
+
+        @media (prefers-color-scheme : dark) {
+            .theme-adaptive {
+                background-color: rgb(255, 193, 9);
+            }
+            
+        }
+
+        @media (prefers-color-scheme : light) {
+            .theme-adaptive {
+                 background-color: var(--bg-color);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-adaptive">theme adaptive</div>
+</body>
+</html>

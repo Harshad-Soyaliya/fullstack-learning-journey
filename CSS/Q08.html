@@ -1,0 +1,69 @@
+<!-- Build a page layout with Grid named areas: header, sidebar, main, footer. Make the sidebar move under the main content on phones. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #Grid-container{
+            display: grid;
+            gap: 5px;
+            grid-template-areas: 
+            'header header header header header'
+            'main main main sidebar sidebar '
+            'Footer Footer Footer Footer Footer'
+            ;
+
+
+        }
+
+        @media (max-width: 640px) {
+        
+            .sidebar{
+                display: block;
+            }
+            #Grid-container{
+                display: grid;
+                gap: 5px;
+                grid-template-areas: 
+                'header header header header header'
+                ' main main main main main'
+                'sidebar sidebar sidebar sidebar sidebar'
+                'Footer Footer Footer Footer Footer'
+            ;
+
+
+        }
+
+        }
+
+        .header , .sidebar , .main , .Footer {
+            border: 1px solid black;
+            height: 25vh;
+            text-align: center;
+
+        }
+
+        .header {  grid-area: header; }
+        .sidebar { grid-area: sidebar; } 
+        .main { grid-area: main;} 
+        .Footer { grid-area: Footer; } 
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="Grid-container">
+        <div class="header">Header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="main">main</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>
